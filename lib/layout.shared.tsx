@@ -17,8 +17,12 @@ export function baseOptions(): BaseLayoutProps {
         url: 'https://seekertracker.com',
       },
       {
-        text: 'Twitter',
-        url: 'https://x.com/Seeker_Tracker',
+        text: 'Telegram',
+        url: 'https://t.me/seeker_tracker',
+      },
+      {
+        text: 'X Community',
+        url: 'https://x.com/i/communities/2015698607681515529',
       },
     ],
     githubUrl: 'https://github.com/SeekerTracker',
