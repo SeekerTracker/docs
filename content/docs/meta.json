@@ -3,6 +3,7 @@
   "pages": [
     "index",
     "getting-started",
+    "dapp-store",
     "skr-allocation",
     "snake-game",
     "sweepstakes",
