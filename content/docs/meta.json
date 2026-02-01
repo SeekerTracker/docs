@@ -2,6 +2,10 @@
   "title": "Documentation",
   "pages": [
     "index",
-    "getting-started"
+    "getting-started",
+    "skr-allocation",
+    "snake-game",
+    "sweepstakes",
+    "tokenomics"
   ]
 }
