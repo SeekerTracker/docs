@@ -3,43 +3,60 @@
 @import 'fumadocs-ui/css/preset.css';
 
 :root {
-  /* SeekerTracker Brand Colors */
-  --fd-primary: 160 100% 50%; /* #00ffd9 cyan */
-  --fd-primary-foreground: 180 100% 10%;
-  --fd-muted: 180 30% 15%;
-  --fd-muted-foreground: 180 10% 70%;
-  --fd-accent: 160 100% 50%;
-  --fd-accent-foreground: 180 100% 10%;
+  /* SeekerTracker Brand Colors - Light Mode */
+  --fd-primary: 160 100% 35%;
+  --fd-primary-foreground: 0 0% 100%;
+  --fd-background: 180 20% 98%;
+  --fd-foreground: 180 50% 10%;
+  --fd-card: 180 20% 96%;
+  --fd-card-foreground: 180 50% 10%;
+  --fd-popover: 180 20% 98%;
+  --fd-popover-foreground: 180 50% 10%;
+  --fd-muted: 180 20% 92%;
+  --fd-muted-foreground: 180 20% 40%;
+  --fd-accent: 160 100% 35%;
+  --fd-accent-foreground: 0 0% 100%;
+  --fd-secondary: 180 20% 94%;
+  --fd-secondary-foreground: 160 100% 30%;
+  --fd-border: 180 20% 88%;
+  --fd-ring: 160 100% 40%;
 }
 
-.dark, :root {
-  --fd-background: 180 100% 3%; /* Dark teal #001a1a */
-  --fd-foreground: 0 0% 93%; /* #ededed */
+.dark {
+  /* SeekerTracker Brand Colors - Dark Mode */
+  --fd-primary: 160 100% 50%;
+  --fd-primary-foreground: 180 100% 10%;
+  --fd-background: 180 100% 3%;
+  --fd-foreground: 0 0% 93%;
   --fd-card: 180 50% 6%;
   --fd-card-foreground: 0 0% 93%;
   --fd-popover: 180 50% 5%;
   --fd-popover-foreground: 0 0% 93%;
+  --fd-muted: 180 30% 15%;
+  --fd-muted-foreground: 180 10% 70%;
+  --fd-accent: 160 100% 50%;
+  --fd-accent-foreground: 180 100% 10%;
   --fd-secondary: 180 30% 10%;
   --fd-secondary-foreground: 160 100% 50%;
   --fd-border: 180 30% 15%;
   --fd-ring: 160 100% 50%;
 }
 
-/* Custom scrollbar matching website */
-::-webkit-scrollbar {
+/* Custom scrollbar - dark mode */
+.dark ::-webkit-scrollbar {
   width: 0.5em;
 }
-::-webkit-scrollbar-track {
+.dark ::-webkit-scrollbar-track {
   background-color: #033c49;
 }
-::-webkit-scrollbar-thumb {
+.dark ::-webkit-scrollbar-thumb {
   border-radius: 0.25em;
   background: linear-gradient(135deg, #00ffd9, #00ff66);
   border: 1px solid #033c49;
 }
 
-/* Grid background effect */
-body::before {
+/* Grid background effect - dark mode only */
+.dark body::before {
   content: '';
   position: fixed;
   top: 0;
@@ -54,16 +71,21 @@ body::before {
   pointer-events: none;
 }
 
-/* Accent color for links and highlights */
-a:hover {
+/* Accent color for links */
+.dark a:hover {
   color: #00ffd9;
 }
 
-/* Code blocks */
-pre {
+/* Code blocks - dark mode */
+.dark pre {
   border: 1px solid rgba(0, 255, 217, 0.2) !important;
 }
 
-code {
+.dark code {
   color: #00ffd9;
+}
+
+/* Light mode code */
+code {
+  color: #007a66;
 }

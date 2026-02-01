@@ -26,7 +26,6 @@ export default function Layout({ children }: LayoutProps<'/'>) {
         <RootProvider 
           theme={{
             defaultTheme: 'dark',
-            forcedTheme: 'dark',
           }}
         >
           {children}
