@@ -1,3 +1,69 @@
 @import 'tailwindcss';
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
+
+:root {
+  /* SeekerTracker Brand Colors */
+  --fd-primary: 160 100% 50%; /* #00ffd9 cyan */
+  --fd-primary-foreground: 180 100% 10%;
+  --fd-muted: 180 30% 15%;
+  --fd-muted-foreground: 180 10% 70%;
+  --fd-accent: 160 100% 50%;
+  --fd-accent-foreground: 180 100% 10%;
+}
+
+.dark, :root {
+  --fd-background: 180 100% 3%; /* Dark teal #001a1a */
+  --fd-foreground: 0 0% 93%; /* #ededed */
+  --fd-card: 180 50% 6%;
+  --fd-card-foreground: 0 0% 93%;
+  --fd-popover: 180 50% 5%;
+  --fd-popover-foreground: 0 0% 93%;
+  --fd-secondary: 180 30% 10%;
+  --fd-secondary-foreground: 160 100% 50%;
+  --fd-border: 180 30% 15%;
+  --fd-ring: 160 100% 50%;
+}
+
+/* Custom scrollbar matching website */
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+::-webkit-scrollbar-track {
+  background-color: #033c49;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0.25em;
+  background: linear-gradient(135deg, #00ffd9, #00ff66);
+  border: 1px solid #033c49;
+}
+
+/* Grid background effect */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(0, 255, 217, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 217, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Accent color for links and highlights */
+a:hover {
+  color: #00ffd9;
+}
+
+/* Code blocks */
+pre {
+  border: 1px solid rgba(0, 255, 217, 0.2) !important;
+}
+
+code {
+  color: #00ffd9;
+}
